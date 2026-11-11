@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechVision — сучасні гаджети за найкращими цінами">
+    <title>TechVision — сучасна техніка для життя</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="TechVision — на головну"><img class="logo" src="logo.png"
+                alt="TechVision"></a>
+        <nav aria-label="Головна навігація">
+            <ul class="menu">
+                <li><a class="menu-elements active" href="#home">Головна</a></li>
+                <li><a class="menu-elements" href="#products">Товари</a></li>
+                <li><a class="menu-elements" href="#contact">Контакти</a></li>
+                <li><a class="menu-elements" href="#advantages">Підтримка</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a class="header-cta" href="#products">Каталог <span>↗</span></a>
+            <button class="profile-button" type="button" id="profile-open">
+                Реєстрація
+            </button>
+            <button class="cart-button" type="button" aria-label="Відкрити кошик">Кошик <span
+                    class="cart-count">0</span></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" id="home">
+            <div class="hero-copy">
+                <div class="eyebrow"><span></span> Нові надходження 2026</div>
+                <h1 class="cta-title">Технології,<br>які <em>надихають.</em></h1>
+                <p class="hero-text">Топові гаджети для роботи, навчання та відпочинку. Якість, перевірена тобою щодня.
+                </p>
+                <div class="hero-actions">
+                    <button class="cta-button" type="button">Переглянути товари <span>→</span></button>
+                    <a class="text-link" href="#advantages">Чому ми?</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-glow"></div>
+                <img src="laptop.png" alt="Сучасний ноутбук">
+                <div class="floating-badge"><strong>24 міс.</strong><span>гарантії</span></div>
+            </div>
+        </section>
+
+        <section class="products-section" id="products">
+            <div class="section-heading">
+                <div><span class="section-kicker">Популярне зараз</span>
+                    <h2 class="products-title">Обери свій гаджет</h2>
+                </div>
+                <p>Техніка, яка зробить кожен день<br>простішим та продуктивним.</p>
+            </div>
+            <div class="products-cards" tabindex="0" aria-label="Каталог товарів">
+                <article class="card">
+                    <div class="card-image laptop-bg"><span class="tag">Хіт</span><img class="img-card" src="laptop.png"
+                            alt="Ноутбук"></div>
+                    <div class="card-info">
+                        <div>
+                            <h3 class="title-card">Ноутбук Air 14</h3>
+                            <p>Для роботи та навчання</p>
+                        </div>
+                        <p class="price-card">40 000 <small>грн</small></p>
+                    </div>
+                    <button class="card-button" type="button" data-name="Ноутбук Air 14" data-image="laptop.png"
+                        data-price="40000" data-spec="14″ • 16 ГБ RAM • 512 ГБ SSD">Детальніше <span>↗</span></button>
+                </article>
+                <article class="card">
+                    <div class="card-image"><img class="img-card" src="smartwatch.png" alt="Смарт-годинник"></div>
+                    <div class="card-info">
+                        <div>
+                            <h3 class="title-card">Smart Watch</h3>
+                            <p>Твоє здоров'я під контролем</p>
+                        </div>
+                        <p class="price-card">7 500 <small>грн</small></p>
+                    </div>
+                    <button class="card-button" type="button" data-name="Smart Watch" data-image="smartwatch.png"
+                        data-price="7500" data-spec="AMOLED • GPS • до 7 днів роботи">Детальніше <span>↗</span></button>
+                </article>
+                <article class="card">
+                    <div class="card-image"><img class="img-card" src="headphones.png" alt="Навушники"></div>
+                    <div class="card-info">
+                        <div>
+                            <h3 class="title-card">Sound Pro</h3>
+                            <p>Звук без меж</p>
+                        </div>
+                        <p class="price-card">5 900 <small>грн</small></p>
+                    </div>
+                    <button class="card-button" type="button" data-name="Sound Pro" data-image="headphones.png"
+                        data-price="5900" data-spec="Noise cancelling • Bluetooth 5.3 • 40 годин">Детальніше
+                        <span>↗</span></button>
+                </article>
+                <article class="card">
+                    <div class="card-image"><img class="img-card" src="tablet.png" alt="Планшет"></div>
+                    <div class="card-info">
+                        <div>
+                            <h3 class="title-card">Tablet Ultra</h3>
+                            <p>Потужність у твоїх руках</p>
+                        </div>
+                        <p class="price-card">18 900 <small>грн</small></p>
+                    </div>
+                    <button class="card-button" type="button" data-name="Tablet Ultra" data-image="tablet.png"
+                        data-price="18900" data-spec="11″ 2K • 8 ГБ RAM • 256 ГБ">Детальніше <span>↗</span></button>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-copy">
+                <span class="section-kicker light">Залишилися питання?</span>
+                <h2>Допоможемо<br>з вибором.</h2>
+                <p>Залиш номер — наш консультант зв'яжеться з тобою протягом 15 хвилин.</p>
+                <form class="contact-form">
+                    <input class="input-phone" type="tel" inputmode="tel" placeholder="+380 (__) ___-__-__"
+                        aria-label="Ваш номер телефону">
+                    <button class="submit-button" type="submit">Передзвоніть мені <span>→</span></button>
+                </form>
+                <small>Натискаючи кнопку, ти погоджуєшся з обробкою персональних даних.</small>
+            </div>
+            <img class="contact-img" src="contact-img.png" alt="Консультант TechVision">
+        </section>
+
+        <section class="support-section" id="support">
+            <div class="support-left">
+                <div class="support-icon">☎</div>
+                <div class="support-copy">
+                    <span class="section-kicker">Ми завжди поруч</span>
+                    <h2>Потрібна допомога<br>з покупкою?</h2>
+                    <p>Наші консультанти допоможуть підібрати техніку, дадуть відповіді на питання та допоможуть з
+                        оформленням замовлення.</p>
+                </div>
+            </div>
+
+            <div class="support-right">
+                <span>Безкоштовна гаряча лінія</span>
+                <a href="tel:+380800505800">0 800 50 58 00</a>
+                <p>Щодня з 9:00 до 21:00</p>
+                <a class="support-button" href="tel:+380800505800">Зателефонувати <span>↗</span></a>
+            </div>
+        </section>
+
+        <section class="service-cards">
+            <div class="service-card">
+                <span class="service-icon">↗</span>
+                <h3>Швидка доставка</h3>
+                <p>Доставляємо замовлення по всій Україні.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">✓</span>
+                <h3>Офіційна гарантія</h3>
+                <p>24 місяці гарантії на нашу техніку.</p>
+            </div>
+            <div class="service-card">
+                <span class="service-icon">♡</span>
+                <h3>Турбота про клієнта</h3>
+                <p>Допоможемо з обміном та поверненням.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <img class="footer-logo" src="logo.png" alt="TechVision">
+                <p>Технології,<br>які надихають.</p>
+                <span class="footer-description">
+                    Відкривай нові можливості разом із TechVision.
+                </span>
+            </div>
+
+            <div class="footer-menu">
+                <div class="vert-menu">
+                    <h3 class="footer-elements-first">Навігація</h3>
+                    <a class="footer-elements" href="#home">Головна</a>
+                    <a class="footer-elements" href="#products">Каталог товарів</a>
+                    <a class="footer-elements" href="#advantages">Наші переваги</a>
+                </div>
+
+                <div class="vert-menu">
+                    <h3 class="footer-elements-first">Клієнтам</h3>
+                    <a class="footer-elements" href="#contact">Контакти</a>
+                    <a class="footer-elements" href="#support">Підтримка</a>
+                    <a class="footer-elements" href="#support">Гарантія</a>
+                </div>
+
+                <div class="vert-menu">
+                    <h3 class="footer-elements-first">Зв'язок</h3>
+                    <a class="footer-elements" href="tel:+380800505800">0 800 50 58 00</a>
+                    <a class="footer-elements" href="#contact">Зворотний дзвінок</a>
+                    <span class="footer-elements">Пн–Нд: 9:00–21:00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 TechVision. Усі права захищені.</span>
+            <span>Made with technology & care ✦</span>
+        </div>
+    </footer>
+
+    <div class="modal-backdrop" id="product-modal" aria-hidden="true">
+        <div class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+            <button class="modal-close" type="button" aria-label="Закрити">×</button>
+            <div class="modal-image-wrap"><img class="modal-image" src="" alt=""></div>
+            <div class="modal-info">
+                <span class="section-kicker">Опис товару</span>
+                <h2 id="modal-name"></h2>
+                <p class="modal-model"></p>
+                <div class="modal-price"></div>
+                <span class="modal-tag"></span>
+                <div class="modal-spec"></div>
+                <div class="modal-actions">
+                    <button class="add-to-cart" type="button">
+                        Додати в кошик <span>→</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <aside class="cart-drawer" aria-hidden="true" aria-label="Кошик">
+        <div class="cart-header">
+            <h2>Мій кошик</h2><button class="cart-close" type="button" aria-label="Закрити кошик">×</button>
+        </div>
+        <div class="cart-account">
+            <div class="cart-account-icon" aria-hidden="true">👤</div>
+            <div class="cart-account-info">
+                <span>ПОКУПКА ВІД ІМЕНІ</span>
+                <strong class="cart-account-name">Гість</strong>
+                <small class="cart-account-email">Увійдіть в акаунт</small>
+            </div>
+            <span class="cart-account-status" aria-label="Не авторизовано">●</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total"><span>Разом</span><strong>0 грн</strong></div>
+            <button class="checkout-button" type="button">Оформити замовлення</button>
+        </div>
+    </aside>
+    <div class="cart-backdrop"></div>
+
+    <!-- PAYMENT MODAL -->
+    <div class="payment-backdrop" id="payment-modal" aria-hidden="true">
+        <div class="payment-modal" role="dialog" aria-modal="true" aria-labelledby="payment-title">
+            <button class="payment-close" type="button" aria-label="Закрити">×</button>
+
+            <div class="payment-heading">
+                <span class="section-kicker">TECHVISION CHECKOUT</span>
+                <h2 id="payment-title">Оплата замовлення</h2>
+                <p>Безпечне оформлення покупки</p>
+            </div>
+
+            <div class="bank-card-preview">
+                <div class="bank-card-top">
+                    <strong>TechVision Pay</strong>
+                    <span>VISA / Mastercard</span>
+                </div>
+                <div class="bank-card-number">•••• •••• •••• ••••</div>
+                <div class="bank-card-bottom">
+                    <span>ІМ'Я ВЛАСНИКА</span>
+                    <strong>YOUR NAME</strong>
+                </div>
+            </div>
+
+            <form class="payment-form">
+                <label>Ім'я власника картки</label>
+                <input class="payment-first-name" type="text" placeholder="Ваше ім'я" required>
+
+                <label>Прізвище власника картки</label>
+                <input class="payment-last-name" type="text" placeholder="Ваше прізвище" required>
+
+                <div class="payment-demo-fields">
+                    <div>
+                        <label>Номер картки</label>
+                        <input type="text" inputmode="numeric" maxlength="19" autocomplete="off"
+                            placeholder="Демо: 0000 0000 0000 0000">
+                    </div>
+                    <div>
+                        <label>Термін дії</label>
+                        <input type="text" inputmode="numeric" maxlength="5" autocomplete="off" placeholder="MM/YY">
+                    </div>
+                    <div>
+                        <label>CVV / CVC</label>
+                        <input type="password" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="•••">
+                    </div>
+                </div>
+
+                <p class="payment-notice">
+                    Це демонстраційна форма. Для реальної оплати використовується захищена платіжна сторінка банку.
+                </p>
+
+                <button class="payment-submit" type="submit">Продовжити оформлення →</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="account-backdrop" id="account-modal" aria-hidden="true">
+        <section class="account-modal" role="dialog" aria-modal="true" aria-labelledby="account-title">
+            <button class="account-close" type="button" aria-label="Закрити">×</button>
+
+            <div class="account-heading">
+                <span class="section-kicker">TECHVISION ACCOUNT</span>
+                <h2 id="account-title">Особистий кабінет</h2>
+                <p>Керуйте своїми даними та переглядайте покупки.</p>
+            </div>
+
+            <section class="account-panel active" id="registration-panel">
+                <h3>Створення профілю</h3>
+
+                <form id="profile-form" class="profile-form">
+                    <label for="profile-name">Ім'я</label>
+                    <input id="profile-name" type="text" placeholder="Ваше ім'я" required>
+
+                    <label for="profile-surname">Прізвище</label>
+                    <input id="profile-surname" type="text" placeholder="Ваше прізвище" required>
+
+                    <label for="profile-email">Електронна пошта</label>
+                    <input id="profile-email" type="email" placeholder="example@gmail.com" required>
+
+                    <p class="profile-message" id="profile-message" aria-live="polite"></p>
+                    <button class="profile-save" type="submit">Зареєструватися →</button>
+                </form>
+                <button class="account-auth-switch" id="show-login" type="button">
+                    Уже маєте акаунт? Увійти
+                </button>
+            </section>
+
+            <section class="account-panel" id="login-panel">
+                <h3>Вхід до акаунту</h3>
+
+                <form id="login-form" class="profile-form">
+                    <label for="login-email">Електронна пошта</label>
+                    <input id="login-email" type="email" placeholder="example@gmail.com" required>
+
+                    <p class="profile-message" id="login-message" aria-live="polite"></p>
+                    <button class="profile-save" type="submit">Увійти →</button>
+                </form>
+                <p class="account-demo-note">
+                    Демонстраційний вхід виконується за електронною поштою без пароля.
+                </p>
+                <button class="account-auth-switch" id="show-registration" type="button">
+                    Ще не маєте акаунту? Зареєструватися
+                </button>
+            </section>
+
+            <div class="account-tabs" id="account-tabs" style="display: none;">
+                <button class="account-tab active" type="button" data-tab="profile">
+                    Мій профіль
+                </button>
+                <button class="account-tab" type="button" data-tab="orders">
+                    Історія замовлень
+                </button>
+                <button class="account-tab" type="button" id="switch-account">
+                    Змінити акаунт
+                </button>
+                <button class="account-tab" type="button" id="logout-account">
+                    Вийти
+                </button>
+            </div>
+
+            <section class="account-panel" id="profile-panel">
+                <h3>Особисті дані</h3>
+                <div class="profile-information">
+                    <p>Ім'я та прізвище</p>
+                    <strong id="profile-full-name"></strong>
+                    <p>Електронна пошта</p>
+                    <strong id="profile-email-display"></strong>
+                </div>
+
+                <div class="profile-statistics">
+                    <div class="profile-stat-card">
+                        <span>УСЬОГО ЗАМОВЛЕНЬ</span>
+                        <strong id="profile-orders-total">0</strong>
+                    </div>
+                    <div class="profile-stat-card">
+                        <span>ВИТРАЧЕНО</span>
+                        <strong id="profile-spent-total">0 грн</strong>
+                    </div>
+                    <div class="profile-stat-card">
+                        <span>ОСТАННЯ ПОКУПКА</span>
+                        <strong id="profile-last-order">—</strong>
+                    </div>
+                </div>
+
+                <div class="profile-recent-orders">
+                    <div class="profile-recent-heading">
+                        <h3>Остання активність</h3>
+                        <span>Історія акаунту</span>
+                    </div>
+                    <div id="profile-recent-list"></div>
+                    <button class="profile-history-button" type="button" data-tab="orders">
+                        Переглянути всі замовлення →
+                    </button>
+                </div>
+            </section>
+
+            <section class="account-panel" id="orders-panel">
+                <div class="orders-heading">
+                    <h3>Мої замовлення</h3>
+                    <span id="orders-count">0 замовлень</span>
+                </div>
+
+                <div class="orders-list" id="orders-list"></div>
+            </section>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
